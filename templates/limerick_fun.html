@@ -1,0 +1,16 @@
+<h1>Limerick Results</h1>
+<p><b>Original Limerick: </b>{{ lim_str }}</p>
+
+<br>
+<h5>Frequency of words</h5>
+<table>
+    {% for i in frequency %}
+    <tr>
+    <td>{{ i }}</td>
+    <td>{{ frequency[i] }}</td>
+    </tr>
+
+
+    {% endfor %}
+</table>
+
